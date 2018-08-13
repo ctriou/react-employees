@@ -1,0 +1,95 @@
+@import '_fonts';
+
+$action-disabled: #8a8585;
+$action-disabled-text: #000000;
+
+body {
+    @include font-normal;
+    background-color: $app-background;
+}
+
+h1, h2 {
+    color: $app-purple;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+table.table {
+    margin-bottom: 0;
+
+    thead > tr > th {
+        border-width: 1px; 
+        border-top: 0;
+    }
+
+    td, th {
+        text-align: center;
+    }
+
+    td {
+        vertical-align: middle;
+    }
+
+    td:first-child, th:first-child {
+        text-align: left;
+    }
+
+    td:last-child, th:last-child {
+        text-align: right;
+    }
+}
+  
+.section {
+    background-color: $app-white;
+    margin-top: 2em;
+
+    .section-header {
+        @include font-bold;
+        background-color: $app-purple;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: white;
+        font-size: 1.5em;
+<<<<<<< HEAD
+        padding: 40px 20px;
+=======
+        padding: 40px 32px;
+>>>>>>> 589b5d2... Code submission for OnPrem Solutions - Clinton Triou
+    }
+
+    .section-body {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px, rgba(0, 0, 0, 0.2) 0px 1px 5px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 40px 20px;
+    }
+}
+
+i.fas.action-button {
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    background-color: $app-purple;
+    color: $app-white;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 13px;
+    font-weight: 900;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: .5em;
+
+    &:hover:not(.action-button-disabled) {
+        opacity: .6;
+        
+    }
+
+    &.action-button-disabled {
+        color: $action-disabled-text;
+        background-color: $action-disabled;
+        opacity: .2;
+        cursor: default;
+    }
+}
