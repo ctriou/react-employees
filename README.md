@@ -2,7 +2,8 @@
 
 Developed as an exercise using React, this is a simple list of employees, each editable
 
-![submission.png](screenshot.png)
+> Here's a screenshot of the main page
+<p><img src="submission.png"/></p>
 
 ## Prerequisites
 - node.js version >= `4.0.x`
